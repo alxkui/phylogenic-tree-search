@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,9 @@ export default function RootLayout({
             <Link className="text-2xl" href="/"><h1>Taxonomy <span className="font-bold">Finder</span></h1></Link>
           </div>
           <div>
-            {children}
+            <Suspense fallback={<p>Loading...</p>}>
+              {children}
+            </Suspense>
           </div>
         </div>
 

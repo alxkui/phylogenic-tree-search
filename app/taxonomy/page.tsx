@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 
 function NestedLineage(props: any) {
@@ -31,7 +31,6 @@ function NestedLineage(props: any) {
 
 export default function Taxonomy() {
     const [taxa, setTaxa]: any = useState([]);
-    const [related, setRelated]: any = useState([]);
     let lineage: any = [];
     const searchParams = useSearchParams()
     const objectFromQuery: any = searchParams.get('object');
