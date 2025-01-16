@@ -24,6 +24,12 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.errorMessage {
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 input {
   border-color: #391253;
   transition: 0.2s ease-in-out all;

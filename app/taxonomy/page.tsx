@@ -86,7 +86,7 @@ function Related(props: any) {
         <div className="my-4 border border-[#391253] p-4 rounded-md">
             <h1 className="my-4 text-2xl">Other {props.rank} in {props.lineage}:</h1>
             { related.length > 0 && related.map((taxa: any) => (
-                <span className="ml-4 pill text-wrap">{taxa.scientific_name}</span>
+               <span className="ml-4 pill text-wrap">{taxa.scientific_name}</span>
             )) }
         </div>
     )

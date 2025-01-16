@@ -30,19 +30,23 @@ export default function RootLayout({
       >
         <div className="flex flex-col gap-10 p-8 font-[family-name:var(--font-geist-sans)]">
           <div className="flex flex-row items-center gap-4">
-            <Link href="/"><h1>Taxonomy <span className="font-bold">Finder</span></h1></Link>
+            <Link className="text-2xl" href="/"><h1>Taxonomy <span className="font-bold">Finder</span></h1></Link>
           </div>
           <div>
             {children}
           </div>
         </div>
 
-        <section>
-          <div className='air air1'></div>
-          <div className='air air2'></div>
-          <div className='air air3'></div>
-          <div className='air air4'></div>
+        <section className="-z-30">
+          <div className='air air1 -z-30'></div>
+          <div className='air air2 -z-30'></div>
+          <div className='air air3 -z-30'></div>
+          <div className='air air4 -z-30'></div>
         </section>
+
+        <div className="text-white text-xs z-10 absolute bottom-0 right-0 p-2">
+          <p>2025 &copy; Taxonomy Finder developed by alxkui | Powered by <a href="https://www.ebi.ac.uk/">ENA Portal API</a></p>
+        </div>
       </body>
     </html>
   );
