@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col gap-10 p-8 font-[family-name:var(--font-geist-sans)]">
           <div className="flex flex-row items-center gap-4">
-            <Link className="text-2xl" href="/"><h1>Taxonomy <span className="font-bold">Finder</span></h1></Link>
+            <Link className="text-2xl text-white" href="/"><h1>Taxonomy <span className="font-bold">Finder</span></h1></Link>
           </div>
           <div>
             <Suspense fallback={<p>Loading...</p>}>

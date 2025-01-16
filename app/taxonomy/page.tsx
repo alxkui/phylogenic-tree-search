@@ -50,7 +50,7 @@ export default function Taxonomy() {
     }, [])
 
     return(
-        <div className="bg-[#240b36] p-6 rounded-md">
+        <div className="bg-[#240b36] p-6 rounded-md text-white">
             <Link href="/"><FaArrowLeft className="mb-4" /></Link>
             <h1 className="text-4xl">{taxa.scientific_name}</h1>
             <div>

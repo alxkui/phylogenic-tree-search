@@ -8,6 +8,7 @@ export default function Home() {
   const [showSearch, setShowSearch] = useState(false);
   //const [requests, setRequests] = useState(0);
   const [errorMsg, setErrorMsg] = useState("");
+
   //const [rateLimiterTimeStart, setRateLimiterTimeStart] = useState(0);
   //const COOLDOWN = 30;
 
@@ -45,7 +46,7 @@ export default function Home() {
       <form className="bg-[#240b36] rounded-full w-full text-xl">
         <input
           onChange={(e) => handleChange(e)}
-          className="py-4 px-4 rounded-md bg-[#240b36] w-full border"
+          className="py-4 px-4 rounded-md bg-[#240b36] w-full border text-white"
           type="text"
           placeholder="Start your search here e.g. Enterobacter sp."
         />
@@ -59,10 +60,10 @@ function Hero() {
   return (
     <div className="flex -z-20 flex-row justify-center items-center mt-28">
         <div className="w-[400]">
-          <h3 className="text-4xl text-left">Easily find taxonomy information, such as lineage and genetic code.</h3>
+          <h3 className="text-4xl text-left text-white">Easily find taxonomy information, such as lineage and genetic code.</h3>
         </div>
         <div>
-          <BiDna size="300" />
+          <BiDna color="white" size="300" />
           </div>
       </div>
   )
@@ -73,7 +74,7 @@ function SearchResults(props: any) {
     <div className="bg-[#240b36] text-xl p-6 h-[600] relative bottom-1 border-[#391253] border border-t-0 rounded-br-md rounded-bl-md overflow-scroll">
       <h2 className="text-2xl">Search results {`(${props.data.length})`}</h2>
       <ul>
-        <li className="my-4">
+        <li className="my-4 text-white">
           {props.data.map((taxa: any) => (
             <TaxaElement
               key={taxa.taxId}
