@@ -6,10 +6,10 @@ import { BiDna } from "react-icons/bi";
 export default function Home() {
   const [data, setData] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
-  const [requests, setRequests] = useState(0);
+  //const [requests, setRequests] = useState(0);
   const [errorMsg, setErrorMsg] = useState("");
-  const [rateLimiterTimeStart, setRateLimiterTimeStart] = useState(0);
-  const COOLDOWN = 30;
+  //const [rateLimiterTimeStart, setRateLimiterTimeStart] = useState(0);
+  //const COOLDOWN = 30;
 
   async function handleChange(e: ChangeEvent<HTMLInputElement>) {
     // if(requests >= 20 && (Date.now() - rateLimiterTimeStart) <= 1000) {
